@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Square Signs</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic%7CPT+Serif:400,400italic%7CBree+Serif">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container height_100">
+                <div class="header-wrap flex-container d-flex height_100 align-items-center">
+                    <div class="col-4 header-left-slid">
+                        <div class="burger-menu" onclick="burgerMenu(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <nav class="header-left-nav">
+                            <ul>
+                                <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/templates">Templates</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-4 d-flex j-content-center header-center-slid">
+                        <a href="/">
+                            <picture>
+                                <source media="(min-width: 650px)" srcset="images/lg-logo.svg">
+                                <img src="images/sm-logo.svg" alt="logo" style="width:auto;">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-4 header-right-slid">
+                        <div class="right-slid-item cart-container">
+                            <a href="#" class="cart-block">
+                                <i class="icon-cart cart_icon"></i>
+                                <span class="cart_text">Cart</span>
+                            </a>
+                        </div>
+                        <div class="right-slid-item login-container">
+                            <a href="#" class="login-block">
+                                <i class="icon-login login_icon"></i>
+                                <span class="login_text">Login</span>
+                            </a>
+                        </div>
+                        <div class="search right-slid-item">
+                            <a href="#">
+                                <i class="icon-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> <!--header-->
+        <main class="main">
+            <div class="container">
+                <div class="flex-container d-flex">
+                    <div class="col-8 col-m-8 col-sm-order1 pt-20">
+                        <div class="slider">
+                            <img src="images/acrylic-signs.png" alt="flyer">
+                        </div>
+                    </div>
+                    <div class="col-4 col-m-4 pt-20">
+                        <div class="custom-backlit">
+                            <div class="block">
+                                <h4>Custom Backlit Decals</h4>
+                                <p>Create Incredible looking graphics with our semi-translucent, backlit film that’s great.</p>
+                            </div>
+                            <div class="center-block block">
+                                <div class="center-first-block">
+                                    <div>
+                                        <div class="mb-14">
+                                            <span class="standartSize">Standart Size:</span>
+                                            <span class="float-right">
+                                                Size:
+                                                <label class="calculate-lable">inch
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                  <label class="calculate-lable">feet
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <select class="calculate">
+                                            <option>108inch X 54inch</option>
+                                            <option>108inch X 54inch</option>
+                                            <option>108inch X 54inch</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <div class="mb-14 mt-14">
+                                            <span class="standartSize">Custom Size:</span>
+                                            <span class="float-right" style="padding-right: 31px;">
+                                                Qty:
+                                            </span>
+                                        </div>
+                                        <div class="number-W">
+                                            <span>W</span>
+                                            <select class="calculate">
+                                                <option>24</option>
+                                                <option>24</option>
+                                                <option>24</option>
+                                            </select>
+                                        </div>
+                                        <div class="number-H">
+                                            <span>H</span>
+                                            <select class="calculate">
+                                                <option>24</option>
+                                                <option>24</option>
+                                                <option>24</option>
+                                            </select>
+                                        </div>
+                                        <div class="qty">
+                                            <select class="calculate">
+                                                <option>1</option>
+                                                <option>1</option>
+                                                <option>1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-last-block">
+                                    <p>Price Total:</p>
+                                    <h6>
+                                        $ 53.26
+                                    </h6>
+                                </div>            
+                            </div>
+                            <div class="block">
+                                <a href="#">
+                                    Create your sign now
+                                    <i class="icon-arrow-r"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tab-container py-15">
+                    <div class="px-15">
+                        <button class="tablink" onclick="openPage('aboutProduct', this)" id="defaultOpen">
+                            About Product
+                            <span class="line"></span>
+                        </button>
+                        <button class="tablink" onclick="openPage('specification', this)">
+                            Specification And Usage
+                            <span class="line"></span>
+                        </button>
+                        <button class="tablink" onclick="openPage('installation', this)">
+                            Installation
+                            <span class="line"></span>
+                        </button>
+                        <button class="tablink" onclick="openPage('faq', this)">
+                            FAQ
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                    <div class="clear-both"></div>
+                    <div class="flex-container d-flex">
+                        <div class="col-8 col-m-8 col-sm-order1 pt-20">
+                            <div>
+                                <div id="aboutProduct" class="tabcontent pt-15">
+                                    <h4>Acrylic Signs</h4>
+                                    <p class="pt-25">
+                                        Custom acrylic signs can be the perfect asset to your company’s branding efforts. Also known as plexiglass,
+                                        acrylic is an ideal material for signs of all purposes - thus it can be used to make both business and decorative 
+                                        signs. As a matter of fact, photos printed on acrylic can be found in some of the finest galleries in the world.
+                                        <br /><br />
+                                        At Square Signs, we offer cutting-edge acrylic printings with your custom design. Just order your sign 
+                                        today and get it shipped the next day to any destination in the USA and Canada.
+                                        <br /><br />
+                                        Want to save some cash on glass prints? Acrylic signs are the best glass substitute. Not only does this 
+                                        material look identical to glass but it is also more lightweight and durable. Being a versatile material, 
+                                        plexiglass can be used both indoors and outdoors… and can withstand harsh weather conditions. 
+                                        <br /><br />
+                                        In terms of effectiveness and durability, custom acrylic prints are the best option for business and personal 
+                                        needs. Plexiglass is the perfect material if you want a refined and eye-grabbing look for your signage.
+                                        The vivid color density of the printing and the attractive graphics won’t leave anyone indifferent.
+                                        <br /><br />
+                                        Custom printed acrylic signs will give off an ideal impression to your potential clients. Send us your personal 
+                                        images or use one of our free designs that fit any category and print them on your acrylic sign.
+                                    </p>                                   
+                                </div>
+            
+                                <div id="specification" class="tabcontent pt-15">
+                                  <h4>Specification And Usage</h4>
+                                </div>
+            
+                                <div id="installation" class="tabcontent pt-15">
+                                  <h4>Installation</h4>
+                                </div>
+            
+                                <div id="faq" class="tabcontent pt-15">
+                                  <h4>FAQ</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-m-4 pt-20">
+                           <div class="top-temp pt-15">
+                               <h4>Top Templates</h4>
+                               <div class="pt-25 search-containetr">
+                                   <div>
+                                       <label for="search" class="search-block">
+                                            <i class="icon-search"></i>
+                                            <input type="search" placeholder="Search" id="search">
+                                       </label>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--container-->
+
+            <div class="container">
+                <div class="cards">
+                    <div class="cards-item">
+                        <article class="card">
+                            <div class="card-img">
+                                <img src="images/namplate.png" alt="Namplate">
+                            </div>
+                            <div class="card-content">
+                              <h3>Acrylic Nameplates</h3>
+                              <p class="pt-20">
+                                Number one signage essential at business centers and offices. Display the names of your employees 
+                                on the door with elegant acrylic glass prints. Put up acrylic plaques with standoffs that provide 
+                                a more professional look and feel. 
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards-item">
+                        <article class="card">
+                            <div class="card-img">
+                                <img src="images/namplate.png" alt="Namplate">
+                            </div>
+                            <div class="card-content">
+                              <h3>Decorative Acrylic Prints</h3>
+                              <p class="pt-20">
+                                Print your favorite pieces of art on acrylic to create a modern and sleek interior design. These 
+                                dazzling signs will be the perfect decoration for your house or office. Print multiple signs in 
+                                different sizes and create a gorgeous photo collage to give life to the dull walls.
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards-item">
+                        <article class="card">
+                            <div class="card-img">
+                                <img src="images/namplate.png" alt="Namplate">
+                            </div>
+                            <div class="card-content">
+                              <h3>Acrylic Wall Art</h3>
+                              <p class="pt-20">
+                                Photography enthusiasts can print their work on acrylic and turn it into a piece of art. At Square 
+                                Signs, we offer gallery-quality printing on all types of acrylic. Turn your house or office into 
+                                your personal studio - with acrylic photos hanging on the walls. Use whichever installation accessory 
+                                you desire - whether you need a hanging or freestanding sign.
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards-item">
+                        <article class="card">
+                            <div class="card-img">
+                                <img src="images/namplate.png" alt="Namplate">
+                            </div>
+                            <div class="card-content">
+                              <h3>Acrylic Logo Signs</h3>
+                              <p class="pt-20">
+                                Brand your office with your logo printed on an acrylic board. Whether displayed indoors or outdoors 
+                                these signs are sure to catch the attention of your potential prospects. Acrylic office signs do 
+                                not require much space, so these logo signs will work perfectly for smaller companies as well. 
+                                Give a more professional look to your workspace with custom-printed logo signs. 
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards-item">
+                        <article class="card">
+                            <div class="card-img">
+                                <img src="images/namplate.png" alt="Namplate">
+                            </div>
+                            <div class="card-content">
+                              <h3>Acrylic photo prints</h3>
+                              <p class="pt-20">
+                                Turn your favorite family photos into stunning decorations printed on acrylic signs. These can be a 
+                                perfect option to always have the images of your loved ones at your office or house. Display your 
+                                personal images printed on acrylic with elegant standoffs. Smaller photo prints can be displayed as 
+                                tabletop stands with lightweight easel backs.
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards-item">
+                        <article class="card">
+                            <div class="card-img">
+                                <img src="images/namplate.png" alt="Namplate">
+                            </div>
+                            <div class="card-content">
+                              <h3>Informative Acrylic Signs</h3>
+                              <p class="pt-20">
+                                Provide information about your products with standoff mounted or direct wall-mounted acrylic signs. 
+                                These are perfect for showcasing information about exhibits at museums and galleries. With a simple 
+                                and elegant look, these signs will fit any interior and will serve their purpose accordingly. 
+                              </p>
+                            </div>
+                        </article>
+                    </div>
+                </div><!--card-->
+            </div>
+        </main> <!--main-->
+        <footer class="footer">
+            footer
+        </footer> <!--footer-->
+    </div>
+
+
+
+    <script>
+        function burgerMenu(x) {
+            x.classList.toggle("change");
+        }
+
+        function openPage(pageName,elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+             // tablinks[i].style.backgroundColor = "";
+              tablinks[i].classList.remove("active-tab");
+            }
+            document.getElementById(pageName).style.display = "block";
+            //elmnt.style.backgroundColor = color;
+            elmnt.classList.add("active-tab");
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+        
+</body>
+</html>
