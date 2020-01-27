@@ -56,3 +56,6 @@ body {
 a {
     text-decoration: none;
 }
+select:focus {
+	outline: -webkit-focus-ring-color auto 0;
+}

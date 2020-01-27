@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Square Signs</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic%7CPT+Serif:400,400italic%7CBree+Serif">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/rest.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/icons.css">
+    <link rel="stylesheet" href="public/css/rest.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="icon" href="public/images/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container height_100">
-                <div class="header-wrap flex-container d-flex height_100 align-items-center">
+                <div class="header-wrap flex-container height_100 align-items-center">
                     <div class="col-4 header-left-slid">
                         <div class="burger-menu" onclick="burgerMenu(this)">
                             <div class="bar1"></div>
@@ -24,16 +24,16 @@
                         </div>
                         <nav class="header-left-nav">
                             <ul>
-                                <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/templates">Templates</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-4 d-flex j-content-center header-center-slid">
                         <a href="/">
                             <picture>
-                                <source media="(min-width: 650px)" srcset="images/lg-logo.svg">
-                                <img src="images/sm-logo.svg" alt="logo" style="width:auto;">
+                                <source media="(min-width: 650px)" srcset="public/images/lg-logo.svg">
+                                <img src="public/images/sm-logo.svg" alt="logo" style="width:auto;">
                             </picture>
                         </a>
                     </div>
@@ -61,13 +61,13 @@
         </header> <!--header-->
         <main class="main">
             <div class="container">
-                <div class="flex-container d-flex">
-                    <div class="col-8 col-m-8 col-sm-order1 pt-20">
+                <div class="flex-container line-height-1">
+                    <div class="col-8 col-m-7 col-sm-order1 pt-20">
                         <div class="slider">
-                            <img src="images/acrylic-signs.png" alt="flyer">
+                            <img src="public/uploads/acrylic-signs.png" alt="flyer">
                         </div>
                     </div>
-                    <div class="col-4 col-m-4 pt-20">
+                    <div class="col-4 col-m-5 pt-20">
                         <div class="custom-backlit">
                             <div class="block">
                                 <h4>Custom Backlit Decals</h4>
@@ -90,11 +90,13 @@
                                                 </label>
                                             </span>
                                         </div>
-                                        <select class="calculate">
-                                            <option>108inch X 54inch</option>
-                                            <option>108inch X 54inch</option>
-                                            <option>108inch X 54inch</option>
-                                        </select>
+                                        <label>
+                                            <select class="calculate">
+                                                <option>108inch X 54inch</option>
+                                                <option>108inch X 54inch</option>
+                                                <option>108inch X 54inch</option>
+                                            </select>
+                                        </label>
                                     </div>
                                     <div>
                                         <div class="mb-14 mt-14">
@@ -105,26 +107,32 @@
                                         </div>
                                         <div class="number-W">
                                             <span>W</span>
-                                            <select class="calculate">
-                                                <option>24</option>
-                                                <option>24</option>
-                                                <option>24</option>
-                                            </select>
+                                            <label>
+                                                <select class="calculate">
+                                                    <option>24</option>
+                                                    <option>24</option>
+                                                    <option>24</option>
+                                                </select>
+                                            </label>
                                         </div>
                                         <div class="number-H">
                                             <span>H</span>
-                                            <select class="calculate">
-                                                <option>24</option>
-                                                <option>24</option>
-                                                <option>24</option>
-                                            </select>
+                                            <label>
+                                                <select class="calculate">
+                                                    <option>24</option>
+                                                    <option>24</option>
+                                                    <option>24</option>
+                                                </select>
+                                            </label>
                                         </div>
                                         <div class="qty">
-                                            <select class="calculate">
-                                                <option>1</option>
-                                                <option>1</option>
-                                                <option>1</option>
-                                            </select>
+                                            <label>
+                                                <select class="calculate">
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +141,7 @@
                                     <h6>
                                         $ 53.26
                                     </h6>
-                                </div>            
+                                </div>
                             </div>
                             <div class="block">
                                 <a href="#">
@@ -147,7 +155,7 @@
             </div>
             <div class="container">
                 <div class="tab-container py-15">
-                    <div class="px-15">
+                    <div class="px-15 flex-container">
                         <button class="tablink" onclick="openPage('aboutProduct', this)" id="defaultOpen">
                             About Product
                             <span class="line"></span>
@@ -166,40 +174,40 @@
                         </button>
                     </div>
                     <div class="clear-both"></div>
-                    <div class="flex-container d-flex">
+                    <div class="flex-container">
                         <div class="col-8 col-m-8 col-sm-order1 pt-20">
                             <div>
                                 <div id="aboutProduct" class="tabcontent pt-15">
                                     <h4>Acrylic Signs</h4>
                                     <p class="pt-25">
                                         Custom acrylic signs can be the perfect asset to your company’s branding efforts. Also known as plexiglass,
-                                        acrylic is an ideal material for signs of all purposes - thus it can be used to make both business and decorative 
+                                        acrylic is an ideal material for signs of all purposes - thus it can be used to make both business and decorative
                                         signs. As a matter of fact, photos printed on acrylic can be found in some of the finest galleries in the world.
                                         <br /><br />
-                                        At Square Signs, we offer cutting-edge acrylic printings with your custom design. Just order your sign 
+                                        At Square Signs, we offer cutting-edge acrylic printings with your custom design. Just order your sign
                                         today and get it shipped the next day to any destination in the USA and Canada.
                                         <br /><br />
-                                        Want to save some cash on glass prints? Acrylic signs are the best glass substitute. Not only does this 
-                                        material look identical to glass but it is also more lightweight and durable. Being a versatile material, 
-                                        plexiglass can be used both indoors and outdoors… and can withstand harsh weather conditions. 
+                                        Want to save some cash on glass prints? Acrylic signs are the best glass substitute. Not only does this
+                                        material look identical to glass but it is also more lightweight and durable. Being a versatile material,
+                                        plexiglass can be used both indoors and outdoors… and can withstand harsh weather conditions.
                                         <br /><br />
-                                        In terms of effectiveness and durability, custom acrylic prints are the best option for business and personal 
+                                        In terms of effectiveness and durability, custom acrylic prints are the best option for business and personal
                                         needs. Plexiglass is the perfect material if you want a refined and eye-grabbing look for your signage.
                                         The vivid color density of the printing and the attractive graphics won’t leave anyone indifferent.
                                         <br /><br />
-                                        Custom printed acrylic signs will give off an ideal impression to your potential clients. Send us your personal 
+                                        Custom printed acrylic signs will give off an ideal impression to your potential clients. Send us your personal
                                         images or use one of our free designs that fit any category and print them on your acrylic sign.
-                                    </p>                                   
+                                    </p>
                                 </div>
-            
+
                                 <div id="specification" class="tabcontent pt-15">
                                   <h4>Specification And Usage</h4>
                                 </div>
-            
+
                                 <div id="installation" class="tabcontent pt-15">
                                   <h4>Installation</h4>
                                 </div>
-            
+
                                 <div id="faq" class="tabcontent pt-15">
                                   <h4>FAQ</h4>
                                 </div>
@@ -216,6 +224,40 @@
                                        </label>
                                    </div>
                                </div>
+                               <div class="mt-30">
+                                   <div class="photo-gallery">
+                                       <div class="grid-container">
+                                           <div class="grid-item item1">
+                                               <img src="public/uploads/Mask-Group-107.png" alt="Mask Group 107">
+                                           </div>
+                                           <div class="grid-item item2">
+                                               <img src="public/uploads/Mask-Group-102.png" alt="Mask Group 102">
+                                           </div>
+                                           <div class="grid-item item3">
+                                               <img src="public/uploads/Mask-Group-101.png" alt="Mask Group 101">
+                                           </div>
+                                           <div class="grid-item item4">
+                                               <img src="public/uploads/Mask-Group-108.png" alt="Mask Group 108">
+                                           </div>
+
+                                           <div class="grid-item item5">
+                                               <img src="public/uploads/Mask-Group-104.png" alt="Mask Group 104">
+                                           </div>
+                                           <div class="grid-item item6">
+                                               <img src="public/uploads/Mask-Group-100.png" alt="Mask Group 100">
+                                           </div>
+                                           <div class="grid-item item7">
+                                               <img src="public/uploads/Mask-Group-109.png" alt="Mask Group 109">
+                                           </div>
+                                           <div class="grid-item item8">
+                                               <img src="public/uploads/Mask-Group-103.png" alt="Mask Group 103">
+                                           </div>
+                                       </div>
+                                       <div class="all-temp">
+                                           <p><a href="#">All templates ></a></p>
+                                       </div>
+                                   </div>
+                               </div>
                            </div>
                         </div>
                     </div>
@@ -223,105 +265,656 @@
             </div> <!--container-->
 
             <div class="container">
-                <div class="cards">
-                    <div class="cards-item">
+                <div class="cards flex-container">
+                    <div class="cards-item col-4 col-m-6">
                         <article class="card">
                             <div class="card-img">
-                                <img src="images/namplate.png" alt="Namplate">
+                                <a href="#">
+                                    <img src="public/uploads/namplate.png" alt="Acrylic Nameplates" class="p-15 pb-0">
+                                </a>
                             </div>
                             <div class="card-content">
                               <h3>Acrylic Nameplates</h3>
                               <p class="pt-20">
-                                Number one signage essential at business centers and offices. Display the names of your employees 
-                                on the door with elegant acrylic glass prints. Put up acrylic plaques with standoffs that provide 
-                                a more professional look and feel. 
+                                Number one signage essential at business centers and offices. Display the names of your employees
+                                on the door with elegant acrylic glass prints. Put up acrylic plaques with standoffs that provide
+                                a more professional look and feel.
                               </p>
                             </div>
                         </article>
                     </div>
-                    <div class="cards-item">
+                    <div class="cards-item col-4 col-m-6">
                         <article class="card">
                             <div class="card-img">
-                                <img src="images/namplate.png" alt="Namplate">
+                                <a href="#">
+                                    <img src="public/uploads/acrylic-picture-sign.png" alt="Decorative Acrylic Prints" class="p-15 pb-0">
+                                </a>
                             </div>
                             <div class="card-content">
                               <h3>Decorative Acrylic Prints</h3>
                               <p class="pt-20">
-                                Print your favorite pieces of art on acrylic to create a modern and sleek interior design. These 
-                                dazzling signs will be the perfect decoration for your house or office. Print multiple signs in 
+                                Print your favorite pieces of art on acrylic to create a modern and sleek interior design. These
+                                dazzling signs will be the perfect decoration for your house or office. Print multiple signs in
                                 different sizes and create a gorgeous photo collage to give life to the dull walls.
                               </p>
                             </div>
                         </article>
                     </div>
-                    <div class="cards-item">
+                    <div class="cards-item col-4 col-m-6">
                         <article class="card">
                             <div class="card-img">
-                                <img src="images/namplate.png" alt="Namplate">
+                                <a href="#">
+                                    <img src="public/uploads/store-decorative-acrylic-printings.png" alt="Acrylic Wall Art" class="p-15 pb-0">
+                                </a>
                             </div>
                             <div class="card-content">
                               <h3>Acrylic Wall Art</h3>
                               <p class="pt-20">
-                                Photography enthusiasts can print their work on acrylic and turn it into a piece of art. At Square 
-                                Signs, we offer gallery-quality printing on all types of acrylic. Turn your house or office into 
-                                your personal studio - with acrylic photos hanging on the walls. Use whichever installation accessory 
+                                Photography enthusiasts can print their work on acrylic and turn it into a piece of art. At Square
+                                Signs, we offer gallery-quality printing on all types of acrylic. Turn your house or office into
+                                your personal studio - with acrylic photos hanging on the walls. Use whichever installation accessory
                                 you desire - whether you need a hanging or freestanding sign.
                               </p>
                             </div>
                         </article>
                     </div>
-                    <div class="cards-item">
+                    <div class="cards-item col-4 col-m-6">
                         <article class="card">
                             <div class="card-img">
-                                <img src="images/namplate.png" alt="Namplate">
+                                <a href="#">
+                                    <img src="public/uploads/standoff-indoor-acrylic-sign.png" alt="Acrylic Logo Signs" class="p-15 pb-0">
+                                </a>
                             </div>
                             <div class="card-content">
                               <h3>Acrylic Logo Signs</h3>
                               <p class="pt-20">
-                                Brand your office with your logo printed on an acrylic board. Whether displayed indoors or outdoors 
-                                these signs are sure to catch the attention of your potential prospects. Acrylic office signs do 
-                                not require much space, so these logo signs will work perfectly for smaller companies as well. 
-                                Give a more professional look to your workspace with custom-printed logo signs. 
+                                Brand your office with your logo printed on an acrylic board. Whether displayed indoors or outdoors
+                                these signs are sure to catch the attention of your potential prospects. Acrylic office signs do
+                                not require much space, so these logo signs will work perfectly for smaller companies as well.
+                                Give a more professional look to your workspace with custom-printed logo signs.
                               </p>
                             </div>
                         </article>
                     </div>
-                    <div class="cards-item">
+                    <div class="cards-item col-4 col-m-6">
                         <article class="card">
                             <div class="card-img">
-                                <img src="images/namplate.png" alt="Namplate">
+                                <a href="">
+                                    <img src="public/uploads/shutterstock_362141573.png" alt="Acrylic photo prints" class="p-15 pb-0">
+                                </a>
                             </div>
                             <div class="card-content">
                               <h3>Acrylic photo prints</h3>
                               <p class="pt-20">
-                                Turn your favorite family photos into stunning decorations printed on acrylic signs. These can be a 
-                                perfect option to always have the images of your loved ones at your office or house. Display your 
-                                personal images printed on acrylic with elegant standoffs. Smaller photo prints can be displayed as 
+                                Turn your favorite family photos into stunning decorations printed on acrylic signs. These can be a
+                                perfect option to always have the images of your loved ones at your office or house. Display your
+                                personal images printed on acrylic with elegant standoffs. Smaller photo prints can be displayed as
                                 tabletop stands with lightweight easel backs.
                               </p>
                             </div>
                         </article>
                     </div>
-                    <div class="cards-item">
+                    <div class="cards-item col-4 col-m-6">
                         <article class="card">
                             <div class="card-img">
-                                <img src="images/namplate.png" alt="Namplate">
+                                <img src="public/uploads/beauty-salon-acrylic-sign.png" alt="Informative Acrylic Signs" class="p-15 pb-0">
                             </div>
                             <div class="card-content">
                               <h3>Informative Acrylic Signs</h3>
                               <p class="pt-20">
-                                Provide information about your products with standoff mounted or direct wall-mounted acrylic signs. 
-                                These are perfect for showcasing information about exhibits at museums and galleries. With a simple 
-                                and elegant look, these signs will fit any interior and will serve their purpose accordingly. 
+                                Provide information about your products with standoff mounted or direct wall-mounted acrylic signs.
+                                These are perfect for showcasing information about exhibits at museums and galleries. With a simple
+                                and elegant look, these signs will fit any interior and will serve their purpose accordingly.
                               </p>
                             </div>
                         </article>
                     </div>
                 </div><!--card-->
+            </div><!--container-->
+
+            <div class="container">
+                <div class="flex-container align-items-center info-container pb-0">
+                    <div class="col-6">
+                        <div class="text-info">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Transparent and translucent material</li>
+                                <li>Rigid and all types of weather-resistant</li>
+                                <li>Perfect optical clarity</li>
+                                <li>Lightweight, durable and affordable glass substitute</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 pt-45 text-align-center">
+                        <img src="public/images/features.png" alt="Features" class="max-w-100">
+                    </div>
+                </div>
+            </div> <!--container-->
+
+            <div class="container">
+                <div class="flex-container align-items-center info-container">
+                    <div class="col-12">
+                        <div class="text-info">
+                            <h3>Materials</h3>
+                            <p>
+                                Acrylic is an ultra-durable plastic material that is often used for both indoor
+                                and outdoor signs. The sturdy material is perfect for making stunning decorations
+                                as well as attractive business signs.
+                                <br><br>
+                                Naturally, the material has a glossy finish but after printing the areas covered
+                                by ink turns matte. Acrylic comes in various thicknesses ranging from 1/8"/0.125"
+                                to 1/2"/0.5". As for the sizes, they highly vary between 4"x4" to 96"x48". We offer
+                                the following types of acrylic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block-info">
+                        <div class="flex-container">
+                            <div class="col-12"><h3>Types</h3></div>
+                            <div>
+                                <div class="cards flex-container">
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/photo-template.png" alt="Photo template">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Clear</h3>
+                                                <p class="pt-20">
+                                                    The material has an ideal optical clarity and transparency.
+                                                    Combined with backlit vinyl it can be used to make breathtaking
+                                                    illuminated signs. With clear acrylic signs, you can choose the
+                                                    inside glass printing that gives more depth to the graphics.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/frosted-acrylic.png" alt="Frosted acrylic">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Frosted</h3>
+                                                <p class="pt-20">
+                                                    The material has a matt finish - perfect for providing privacy at the
+                                                    workplace. Although frosted acrylic signs are not see-through, these
+                                                    signs are translucent.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/black-acrylic.png" alt="Black acrylic">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Black</h3>
+                                                <p class="pt-20">
+                                                    Standard black color that can be printed in any color you desire.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/white-acrylic.png" alt="White acrylic">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>White</h3>
+                                                <p class="pt-20">
+                                                    Brand your office with your logo printed on an acrylic board.
+                                                    Whether displayed indoors or outdoors these signs are sure to
+                                                    catch the attention of your potential prospects. Acrylic office
+                                                    signs do not require much space, so these logo signs will work
+                                                    perfectly for smaller companies as well. Give a more professional
+                                                    look to your workspace with custom-printed logo signs.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--container-->
+
+            <div class="container">
+                <div class="flex-container align-items-center info-container">
+                    <div class="col-12">
+                        <div class="text-info">
+                            <h3>Printing</h3>
+                            <p>
+                                You are open to order custom acrylic signs with custom designs printed on them.
+                                Use our free design tool to create your personalized graphics or choose one of
+                                our beautiful templates. For printing, we use sublime quality UV and digital
+                                printers. After the printing process, the inks are dried with ultraviolet rays.
+                                This makes the printing sun-resistant and guarantees a long lifespan to the sign.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block-info">
+                        <div class="flex-container">
+                            <div class="col-12"><h3>Printing options</h3></div>
+                            <div>
+                                <div class="cards flex-container">
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-standard-printing.png" alt="Standard printing">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Standard printing</h3>
+                                                <p class="pt-20">
+                                                    The graphics are directly printed on the face part of one of the acrylic
+                                                    sheets (black, white, clear, frosted). The printed areas on the sign have
+                                                    a matte finish.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-second-surface.png" alt="Second Surface Printing">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Second Surface Printing</h3>
+                                                <p class="pt-20">
+                                                    With this option, the graphics are mirror printed on the back of the acrylic.
+                                                    So, when you look at the sign it seems as if the printing is inside the
+                                                    material. This printing provides a glossy finish as the graphics are on the
+                                                    back, thus leaving the face part clean and shiny.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-12">
+                                        <article class="card-row">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-double-sided-print.png" alt="Double-sided printing">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Double-sided printing</h3>
+                                                <p class="pt-20">
+                                                    For better visibility, you can get acrylic signs with graphics on both sides.
+                                                    With this option, your chosen images will be printed on the front and the back
+                                                    of the plexiglass. The printed area has a matte finish.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--container-->
+
+            <div class="container">
+                <div class="flex-container align-items-center info-container">
+                    <div class="col-12">
+                        <div class="text-info">
+                            <h3>Cutting</h3>
+                            <p>
+                                We offer the latest equipment in the industry for cutting your acrylic
+                                signs with high accuracy. Being controlled by computer, laser cutting
+                                and CNC machines provide perfectly cut edges. Hence, you can order acrylic
+                                signs in custom shapes and sizes. Due to the versatility of the material
+                                you can choose from the following cutting options.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block-info">
+                        <div class="flex-container">
+                            <div class="col-12"><h3>Cutting options</h3></div>
+                            <div class="cutting-options">
+                                <div class="cards flex-container">
+                                    <div class="cards-item col-3 col-m-6">
+                                        <article class="card">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-standard-cut.png" alt="Standard">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Standard</h3>
+                                                <p class="pt-20">
+                                                    The square or rectangle-shaped signage will have standard sharp edges
+                                                    with pointed corners.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-3 col-m-6">
+                                        <article class="card">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-rounded-corner-cut.png" alt="Rounded">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Rounded</h3>
+                                                <p class="pt-20">
+                                                    The sharp edges of the signs will be rounded. Signs with round cut edges
+                                                    have a cleaner and more elegant look.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-3 col-m-6">
+                                        <article class="card">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-outline-cut.png" alt="Outline">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Outline</h3>
+                                                <p class="pt-20">
+                                                    This cutting option provides signs in the shape of your design without any
+                                                    extra edges.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-3 col-m-6">
+                                        <article class="card">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-overline-cut.png" alt="Overline">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Overline</h3>
+                                                <p class="pt-20">
+                                                    With this option, the sign is cut in the exact shape of the design
+                                                    with an extra border around it.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--container-->
+
+            <div class="container">
+                <div class="flex-container align-items-center info-container">
+                    <div class="col-12">
+                        <div class="text-info">
+                            <h3>Lamination</h3>
+                            <p>
+                                To make every piece of sign more durable, we offer lamination services.
+                                The special coating protects the material and the printing from abrasion.
+                                During the process of lamination, the printed sign is covered with a protective
+                                layer to prevent the surface of the sign from scratching. With this film coating,
+                                your acrylic printing will retain its initial look for a long period. We offer two
+                                types of lamination: glossy and matte.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block-info">
+                        <div class="flex-container">
+                            <div class="col-12"><h3>Lamination options</h3></div>
+                            <div class="cutting-options">
+                                <div class="cards flex-container">
+                                    <div class="cards-item col-6">
+                                        <article class="card">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-glossy.png" alt="Glossy finish">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Glossy finish</h3>
+                                                <p class="pt-20">
+                                                    For more sheen and high-contrast colors, choose the glossy lamination option. This finish provides a
+                                                    cleaner and deeper look with vibrant colors that immediately attract attention.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="cards-item col-6">
+                                        <article class="card">
+                                            <div class="card-img">
+                                                <a href="#">
+                                                    <img src="public/uploads/acrylic-matte.png" alt="Matte finish">
+                                                </a>
+                                            </div>
+                                            <div class="card-content">
+                                                <h3>Matte finish</h3>
+                                                <p class="pt-20">
+                                                    For a soft look, matte lamination is the best option.
+                                                    It provides a more elegant look to the sign.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flex-container align-items-center info-container">
+                    <div class="col-12">
+                        <div class="text-info">
+                            <h3>Comparison of Similar Signs</h3>
+                        </div>
+                        <div class="block-info">
+                            <table class="table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Acrylic</th>
+                                    <th>PVC</th>
+                                    <th>Aluminum</th>
+                                    <th>Styrene</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Min. size</td>
+                                    <td>4"x4"</td>
+                                    <td>4"x4"</td>
+                                    <td>4"x4"</td>
+                                    <td>4"x4"</td>
+                                </tr>
+                                <tr>
+                                    <td>Max. size</td>
+                                    <td>96"x48"</td>
+                                    <td>48"x96"</td>
+                                    <td>48"x96"</td>
+                                    <td>96"x48"</td>
+                                </tr>
+                                <tr>
+                                    <td>Thickness (min/max)</td>
+                                    <td>1/8"/0.125" <br>1/2"/0.5"</td>
+                                    <td>1/8"/0.125" <br>1/2"/0.5"</td>
+                                    <td>0.032" <br>0.080"</td>
+                                    <td>0.020" <br>1/4"/0.25"</td>
+                                </tr>
+                                <tr>
+                                    <td>Printing options</td>
+                                    <td>
+                                        Standard <br>
+                                        Second surface <br>
+                                        Double sided
+                                    </td>
+                                    <td>
+                                        Standard <br>
+                                        Double sided
+                                    </td>
+                                    <td>
+                                        Standard <br>
+                                        Double sided
+                                    </td>
+                                    <td>
+                                        Standard <br>
+                                        Double sided
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Prices starting from</td>
+                                    <td>$ 60</td>
+                                    <td>$ 17.33</td>
+                                    <td>$ 17.39</td>
+                                    <td>$ 14.15</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main> <!--main-->
         <footer class="footer">
-            footer
+            <div class="container height_100">
+                <div class="flex-container height_100 align-items-center">
+                    <div class="copyright-block">
+                        <img src="public/images/footer-logo.svg" alt="Footer logo">
+                        <p class="copyright">
+                            © 2019 Square Signs.<br />
+                            All rights reserved
+                        </p>
+                    </div>
+                    <div class="right-block">
+                        <div class="flex-container">
+                        <div class="col-9 px-s-0">
+                            <div>
+                                <h3 class="px-15 arrow-down">Products</h3>
+                                <ul class="flex-container toggle-open-list">
+                                    <li class="col-3"><a href="#">Acrylic Signs</a></li>
+                                    <li class="col-3"><a href="#">Aluminium Signs</a></li>
+                                    <li class="col-3"><a href="#">Backlit Decals</a></li>
+                                    <li class="col-3"><a href="#">Brushed Aluminium Signs</a></li>
+                                    <li class="col-3"><a href="#">Canvas Signs</a></li>
+                                    <li class="col-3"><a href="#">Car Decals</a></li>
+                                    <li class="col-3"><a href="#">Composite Aluminium Signs</a></li>
+                                    <li class="col-3"><a href="#">Fabric Banners</a></li>
+                                    <li class="col-3"><a href="#">Floor Decals</a></li>
+                                    <li class="col-3"><a href="#">Foamboard Signs</a></li>
+                                    <li class="col-3"><a href="#">Frosted Window Decals</a></li>
+                                    <li class="col-3"><a href="#">Gatorboard Signs</a></li>
+                                    <li class="col-3"><a href="#">Magnetic Signs</a></li>
+                                    <li class="col-3"><a href="#">Mesh Banners</a></li>
+                                    <li class="col-3"><a href="#">Perforated Window Decals</a></li>
+                                    <li class="col-3"><a href="#">Pop up Displays</a></li>
+                                    <li class="col-3"><a href="#">PVC Signs</a></li>
+                                    <li class="col-3"><a href="#">Reflective Aluminium Signs</a></li>
+                                    <li class="col-3"><a href="#">Roll Up Banners</a></li>
+                                    <li class="col-3"><a href="#">Sandwich Boards</a></li>
+                                    <li class="col-3"><a href="#">Static Clings</a></li>
+                                    <li class="col-3"><a href="#">Styrene Signs</a></li>
+                                    <li class="col-3"><a href="#">Telescopic Banners</a></li>
+                                    <li class="col-3"><a href="#">Vinyl Banners</a></li>
+                                    <li class="col-3"><a href="#">Vinyl Lettering</a></li>
+                                    <li class="col-3"><a href="#">Wall Decals</a></li>
+                                    <li class="col-3"><a href="#">Window Decals</a></li>
+                                    <li class="col-3"><a href="#">Wooden Signs</a></li>
+                                    <li class="col-3"><a href="#">X-stand Banners</a></li>
+                                    <li class="col-3"><a href="#">Yard Signs</a></li>
+                                </ul>
+                            </div>
+                            <div class="mobile-line"><div></div></div>
+                            <div>
+                                <h3 class="mt-30 px-15 temp-text arrow-down">Templates</h3>
+                                <ul class="flex-container toggle-open-list">
+                                    <li class="col-3"><a href="#">Business</a></li>
+                                    <li class="col-3"><a href="#">Decorations</a></li>
+                                    <li class="col-3"><a href="#">Events</a></li>
+                                    <li class="col-3"><a href="#">Government</a></li>
+                                    <li class="col-3"><a href="#">Holiday</a></li>
+                                    <li class="col-3"><a href="#">Political</a></li>
+                                    <li class="col-3"><a href="#">Safety/Notice</a></li>
+                                    <li class="col-3"><a href="#">Sport</a></li>
+                                    <li class="col-3"><a href="#">Traffic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 px-s-0">
+                            <div class="flex-container flex-wrap-no">
+                                <div class="col-5">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="">Policies</a></li>
+                                        <li><a href="">About</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Support</h3>
+                                    <ul>
+                                        <li><a href="">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex-container flex-wrap-no">
+                                <div class="col-5">
+                                    <h3 class="mt-30">Resources</h3>
+                                    <ul>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">Sitemap</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-7 social-block">
+                                    <h3 class="mt-30">We Are Social</h3>
+                                    <div class="pt-15">
+                                        <a href=""><i class="icon-fb"></i></a>
+                                        <a href=""><i class="icon-instagram"></i></a>
+                                        <a href=""><i class="icon-twitter"></i></a>
+                                        <a href=""><i class="icon-youtube"></i></a>
+                                        <a href=""><i class="icon-in"></i></a>
+                                        <a href=""><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container flex-wrap-no">
+                                <div class="col-12 contact-block">
+                                    <h3 class="mt-30">Contact</h3>
+                                    <ul>
+                                        <li>
+                                            <a>15101 Keswick Street <br>Van Nuys ,California, 91405, USA</a>
+                                        </li>
+                                        <li>
+                                            <a>(844) 833-4455</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:support@squaresigns.com">support@squaresigns.com</a>
+                                        </li>
+                                        <li>
+                                            <img src="public/images/norton.svg" alt="norton" class="pt-20">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
         </footer> <!--footer-->
     </div>
 
@@ -332,23 +925,19 @@
             x.classList.toggle("change");
         }
 
-        function openPage(pageName,elmnt) {
-            var i, tabcontent, tablinks;
+        function openPage(pageName,elem) {
+            let i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
               tabcontent[i].style.display = "none";
             }
             tablinks = document.getElementsByClassName("tablink");
             for (i = 0; i < tablinks.length; i++) {
-             // tablinks[i].style.backgroundColor = "";
               tablinks[i].classList.remove("active-tab");
             }
             document.getElementById(pageName).style.display = "block";
-            //elmnt.style.backgroundColor = color;
-            elmnt.classList.add("active-tab");
+            elem.classList.add("active-tab");
         }
-
-        // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
         

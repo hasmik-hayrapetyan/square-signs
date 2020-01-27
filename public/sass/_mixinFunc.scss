@@ -1,0 +1,8 @@
+@mixin transform($rotate, $transArg1, $transArg2) {
+  -webkit-transform: rotate($rotate) translate($transArg1, $transArg2);
+  transform: rotate($rotate) translate($transArg1, $transArg2);
+}
+
+@mixin borderRadius($prop) {
+  border-radius: $prop;
+}

@@ -1,0 +1,102 @@
+// footer
+@import "mixinFunc";
+@import "colors";
+
+.footer {
+  background-color: $darkGray;
+  color: $white;
+  padding: 70px 0;
+  .mobile-line {
+    display: none;
+    div {
+      height: 1px;
+      background-color: $silver;
+      margin: 5px 0;
+    }
+  }
+  p.copyright {
+    font-size: 12px;
+  }
+  .right-block {
+    border-left: 1px solid $silver;
+    flex: 1;
+    ul {
+      li {
+        a {
+          color: $white;
+          font-size: 12px;
+          opacity: .5;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+    .social-block {
+      a {
+        padding-right: 6px;
+        color: $white;
+        opacity: .5;
+      }
+    }
+  }
+  .copyright-block {
+    padding: 0 28px 0 15px;
+  }
+  .contact-block {
+    h3 {
+      margin-top: 48px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer {
+    .copyright-block {
+      display: none;
+    }
+    .right-block {
+      border-left: 0 solid;
+    }
+    .px-s-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+    .arrow-down {
+      &:after {
+        content: "";
+        position: relative;
+        top: 10px;
+        float: right;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+      }
+    }
+    .mobile-line{
+      display: block;
+      padding: 0 15px;
+    }
+    h3.temp-text {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .contact-block h3 {
+      margin-top: 30px;
+    }
+    .flex-wrap-no {
+      flex-wrap: nowrap;
+    }
+    .right-block {
+      .toggle-open-list {
+        display: none;
+      }
+    }
+  }
+}
